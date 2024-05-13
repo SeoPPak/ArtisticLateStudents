@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% if group_list %}
+    <ul>
+        {% for group in group_list %}
+             <li><p>{{ group.id }} {{ group.name }}</p></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>가입한 그룹이 없습니다.</p>
+{% endif %}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% if user_list %}
+    <ul>
+        {% for user in user_list %}
+             <li><p>{{ user.id }} {{ user.password }} {{ user.username }} {{ user.email }} {{ user.grouplist }}</p></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>멤버가 없습니다.</p>
+{% endif %}
